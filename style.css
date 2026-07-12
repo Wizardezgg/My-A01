@@ -1,3 +1,50 @@
+.btn {
+  background-color: #2563eb;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 24px;
+  border-radius: 4px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: background-color 0.2s;
+}
+.hero {
+  position: relative;
+  min-height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: url('./assets/banner.jpg');
+  background-size: cover;
+  background-position: center;
+  margin-top: 70px;
+  padding: 32px;
+}
+.dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.hero-main {
+  position: relative;
+  color: white;
+  max-width: 800px;
+}
+.hero h1 {
+  font-size: 64px;
+  margin-bottom: 24px;
+}
+.hero p {
+  font-size: 20px;
+  margin-bottom: 350px;
+}
 .navbar {
     position: fixed;
     top: 0;
