@@ -309,3 +309,108 @@ footer {
   color: #9ca3af;
   font-size: 14px;
 }
+.ai-challenge-parent {
+  background-color: #1e293b;
+  color: #ffffff;
+  padding: 80px 0;
+}
+.ai-hackathon {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.hackathon-title {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+.hackathon-description {
+  font-size: 20px;
+  color: #cbd5e1;
+  margin-bottom: 48px;
+}
+.hackathon-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  max-width: 800px;
+  margin: 0 auto 48px auto;
+}
+.detail-card {
+  background-color: #111827;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 20px;
+  transition: transform 0.2s, border-color 0.2s;
+}
+.detail-card:hover {
+  transform: translateY(-5px);
+  border-color: #2563eb;
+}
+.detail-icon {
+  font-size: 40px;
+}
+.detail-info h4 {
+  font-size: 16px;
+  color: #94a3b8;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+.detail-info p {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+}
+.winners-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 64px 0 32px 0;
+  text-align: center;
+}
+.winners-details {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 64px;
+}
+.winner-item {
+  background-color: #111827;
+  border: 1px solid #334155;
+  border-radius: 50px;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.winner-item:hover {
+  transform: translateY(-3px);
+  border-color: #10b981;
+}
+.winner-icon {
+  font-size: 24px;
+}
+.winner-text {
+  font-weight: 600;
+  font-size: 16px;
+}
+.hackathon-btn {
+  background-color: #2563eb;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 16px 40px;
+  border-radius: 50px;
+  display: inline-block;
+  font-weight: 700;
+  border: none;
+}
+.hackathon-btn:hover {
+  background-color: #1d4ed8;
+  color: #ffffff;
+  transform: scale(1.05);
+}
