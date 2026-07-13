@@ -148,3 +148,108 @@ ul {
   color: #6b7280;
   font-size: 14px;
 }
+.pricing {
+  background-color: #ffffff;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 64px 32px;  
+ 
+}
+.pricing p {
+  text-align: center;
+  color: #6b7280;
+  margin-bottom: 48px;
+  margin-top: -32px;
+}
+.pricing-parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  align-items: center;
+}
+.pricing-card {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 32px;
+  text-align: left;
+}
+.pricing-card.featured {
+  background-color: #0f172a;
+  border-color: #0f172a;
+  padding: 48px 32px;
+}
+.pricing-card h3 {
+  font-size: 12px;
+  color: #6b7280;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+.pricing-card.featured h3 {
+  color: #3b82f6;
+}
+.pricing-card #price {
+  font-size: 48px;
+  font-weight: 700;
+  color: #111827;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e5e7eb;
+  margin-bottom: 24px;
+}
+.pricing-card.featured #price {
+  color: white;
+  border-bottom-color: #1e293b;
+}
+.pricing-card #price span {
+  display: block;
+  font-size: 14px;
+  color: #6b7280;
+  font-weight: 400;
+  margin-top: 4px;
+}
+.pricing-card.featured #price span {
+  color: #94a3b8;
+}
+.pricing-card ul {
+  list-style-type: disc;
+  padding-left: 24px;
+  margin: 0 0 32px 0;
+}
+.pricing-card ul li {
+  margin-bottom: 16px;
+  color: #4b5563;
+}
+.pricing-card ul li::marker {
+  color: #2563eb;
+}
+.pricing-card.featured ul li {
+  color: #f1f5f9;
+}
+.pricing-card a {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.2s;
+  background-color: transparent;
+  border: 1px solid #2563eb;
+  color: #2563eb;
+  text-decoration: none;
+}
+.pricing-card a:hover {
+  background-color: #2563eb;
+  color: #ffffff;
+}
+.pricing-card.featured a {
+  background-color: #2563eb;
+  color: #ffffff;
+  border-color: #2563eb;
+}
+.pricing-card.featured a:hover {
+  background-color: #1d4ed8;
+}
