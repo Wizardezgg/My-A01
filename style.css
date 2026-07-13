@@ -1,3 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+body {
+  background-color: white;
+  color: #333333;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
 .btn {
   background-color: #2563eb;
   color: white;
@@ -10,6 +27,39 @@
   cursor: pointer;
   border: 1px solid transparent;
   transition: background-color 0.2s;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid #e5e7eb;
+}
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-names {
+  display: flex;
+  gap: 32px; 
+  font-weight: 500;
+  color: #4b5563;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 20px;
+  color: #111827;
+}
+.logo img {
+  height: 30px;
 }
 .hero {
   position: relative;
@@ -45,37 +95,56 @@
   font-size: 20px;
   margin-bottom: 350px;
 }
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: white;
-    border-bottom: 1px solid gray;
-}
-.nav-container {
+.speakers {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 16px 32px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  padding: 64px 32px;  
+ 
 }
-.navbar-names {
-  display: flex;
-  gap: 32px; 
-  font-weight: 500;
-  color: #4b5563;
-}
+.speakers-parent {
+ display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
 
-.logo {
+}
+.speaker-card {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
   display: flex;
-  align-items: center;
-  gap: 8px;
-  font-weight: 700;
+  flex-direction: column;
+}
+.speaker-card-image {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-color: #e5e7eb;
+}
+.speaker-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.speaker-card span {
+  display: inline-block;
+  color: #2563eb;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 12px;
+  text-align: left;
+  margin-bottom: 5px;
+}
+.speaker-card-text {
+  padding: 24px;
+  text-align: left;
+}
+.speaker-card h3 {
   font-size: 20px;
   color: #111827;
+  margin-bottom: 8px;
 }
-.logo img {
-  height: 30px;
+.speaker-card p {
+  color: #6b7280;
+  font-size: 14px;
 }
